@@ -36,3 +36,19 @@ input[type="select"] {
         padding: 0;
     }
 }
+
+li {
+    margin-left: 20px;
+    font-size: 10px;
+    font-weight: normal;
+}
+ul {
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: normal;
+}
+div {
+    font-weight: bold;
+}

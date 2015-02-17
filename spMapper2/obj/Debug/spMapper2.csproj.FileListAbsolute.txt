@@ -49,3 +49,4 @@ C:\Users\Rebecca\Documents\Visual Studio 2013\Projects\spMapper2\spMapper2\bin\M
 C:\Users\Rebecca\Documents\Visual Studio 2013\Projects\spMapper2\spMapper2\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Rebecca\Documents\Visual Studio 2013\Projects\spMapper2\spMapper2\obj\Debug\spMapper2.dll
 C:\Users\Rebecca\Documents\Visual Studio 2013\Projects\spMapper2\spMapper2\obj\Debug\spMapper2.pdb
+C:\Users\Rebecca\Documents\Visual Studio 2013\Projects\spMapper2\spMapper2\obj\Debug\spMapper2.csprojResolveAssemblyReference.cache

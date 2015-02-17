@@ -28,7 +28,9 @@ namespace spMapper2
             HtmlGenericControl subSiteItem = new HtmlGenericControl("li");
             HtmlGenericControl innerDiv = new HtmlGenericControl("div");
             innerDiv.InnerText = site.Title;
-            subSiteItem.Attributes["class"] = "mapperSite";
+            subSiteList.Attributes["class"] = "mapperSite";
+            subSiteList.InnerText = "Lists";
+            subSiteItem.Attributes.CssStyle.Add("display", "none");
 
             //subSiteItem.Attributes["onclick"] = "$(this).slideToggle();";
             siteItem.Controls.Add(innerDiv);
