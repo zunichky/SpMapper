@@ -24,28 +24,34 @@ namespace spMapper2
 
         private void ProcessSite(Site site, HtmlGenericControl siteItem)
         {
+            HtmlGenericControl subSiteDiv = new HtmlGenericControl("div");
             HtmlGenericControl subSiteList = new HtmlGenericControl("ul");
             HtmlGenericControl subSiteItem = new HtmlGenericControl("li");
             HtmlGenericControl innerDiv = new HtmlGenericControl("div");
+
             innerDiv.InnerText = site.Title;
             subSiteList.Attributes["class"] = "mapperSite";
             subSiteList.InnerText = "Lists";
             subSiteItem.Attributes.CssStyle.Add("display", "none");
-
+            subSiteDiv.Attributes["class"] = "picDiv";
+            
             //subSiteItem.Attributes["onclick"] = "$(this).slideToggle();";
+
             siteItem.Controls.Add(innerDiv);
             subSiteList.Controls.Add(subSiteItem);
-            siteItem.Controls.Add(subSiteList);
+            siteItem.Controls.Add(subSiteDiv);
+            subSiteDiv.Controls.Add(subSiteList);
+
 
 
             foreach (List spList in site.Lists)
             {
-                ProcessList(spList, subSiteItem);
+                ProcessList(spList, subSiteList);
             }
 
             foreach (Site subSite in site.SubSites)
             {
-                ProcessSite(subSite, subSiteItem);
+                ProcessSite(subSite, subSiteList);
             }
         }
 
